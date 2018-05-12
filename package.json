@@ -1,37 +1,30 @@
 {
   "name": "bloc-jams-react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "new package",
+  "main": "index.js",
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-=======
-=======
->>>>>>> f8ba34290b0b2dc95fe50c78b0449f78a02dad01
     "ajv": "^6.5.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2",
-<<<<<<< HEAD
->>>>>>> f8ba34290b0b2dc95fe50c78b0449f78a02dad01
-=======
->>>>>>> f8ba34290b0b2dc95fe50c78b0449f78a02dad01
-    "react-scripts": "1.1.4"
+    "react-scripts": "^1.1.4"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
-<<<<<<< HEAD
-<<<<<<< HEAD
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkavo92/Bloc-jams-React.git"
+  },
+  "keywords": [
+    "khang"
+  ],
+  "author": "khang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkavo92/Bloc-jams-React/issues"
+  },
+  "homepage": "https://github.com/mkavo92/Bloc-jams-React#readme"
 }
-=======
-}
->>>>>>> f8ba34290b0b2dc95fe50c78b0449f78a02dad01
-=======
-}
->>>>>>> f8ba34290b0b2dc95fe50c78b0449f78a02dad01
