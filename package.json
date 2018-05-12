@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "hello"
-  },
+ "start": "react-scripts start" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkavo92/Bloc-jams-React.git"
