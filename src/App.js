@@ -17,6 +17,7 @@ class App extends Component {
          <main>
          <Route exact path="/" component={Landing} /> {/* exact? By default, a route matches any path in the URL that begins with the value of the path prop*/}
            <Route path="/library" component={Library} />
+           <Routh path="/album:slug" component={Album} />
          </main>
       </div>
     );
