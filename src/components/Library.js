@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import albumData from './../data/album';
@@ -24,5 +25,14 @@ class Library extends Component {
 );
   }
 }
+=======
+import React from 'react';
+
+const Library = () => (
+  <section className="library">
+    Library will go here
+  </section>
+);
+>>>>>>> routing
 
 export default Library;
