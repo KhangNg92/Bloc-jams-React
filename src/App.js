@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import Album from './components/Album';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-=======
-import { Route, Link } from 'react-router-dom';
-import './App.css';
->>>>>>> routing
 import Landing from './components/Landing';
 import Library from './components/Library';
 
@@ -15,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<<<<<<< HEAD
        <header>
        <nav>
              <Link to='/'>Landing</Link>
@@ -28,19 +22,6 @@ class App extends Component {
            <Route path="/library" component={Library} />
            <Route path="/album/:slug" component={Album} />
          </main>
-=======
-      <header>
-        <nav>
-          <Link to='/'>Landing</Link>
-          <Link to='/library'>Library</Link>
-        </nav>
-        <h1>Bloc Jams</h1>
-       </header>
-       <main>
-        <Route exact path="/" component={Landing} />
-        <Route path="/library" component={Library} />
-       </main>
->>>>>>> routing
       </div>
     );
   }
