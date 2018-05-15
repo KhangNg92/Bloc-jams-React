@@ -26,6 +26,9 @@ class Album extends Component {
    },
    durationchange: e => {
      this.setState({ duration: this.audioElement.duration });
+   },
+   volumeChange: e => {
+     this.setState({ duration: this.audioElement.volume});
    }
  };
  this.audioElement.addEventListener('timeupdate', this.eventListeners.timeupdate);
