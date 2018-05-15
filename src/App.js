@@ -4,7 +4,7 @@ import './App.css';
 import { Route, Link } from 'react-router-dom';
 import Landing from './components/Landing';
 import Library from './components/Library';
-
+import PlayerBar from './components/PlayerBar';
 
 class App extends Component {
   render() {
