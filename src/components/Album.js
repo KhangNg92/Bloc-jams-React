@@ -67,17 +67,20 @@ class Album extends Component {
        this.play();
      }
      handleNextClick() {
-       const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
-       const newIndex = Math.max(0, currentIndex + 1);
-       let songsLength = this.state.album.songs;
-       if (newIndex <= songsLength - 1) {
-       const newSong = this.state.album.songs[newIndex]}
-       else {
+      const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
+      const newIndex = Math.max(0, currentIndex + 1);
+      if (newIndex <= this.state.album.songs.length - 1) {
+       const newSong = this.state.album.songs[newIndex];
+      this.setSong(newSong);
+      this.play();
+      }
+      else { 
        const newSong = this.state.album.songs[0];
        this.setSong(newSong);
        this.play();
-     }
-<<<<<<< HEAD
+      }
+    }
+
      handleTimeChange(e) {
        const newTime = this.audioElement.duration * e.target.value;
        this.audioElement.currentTime = newTime;
@@ -95,9 +98,6 @@ class Album extends Component {
          return "-:--";
        }
      }
-=======
-    }
->>>>>>> button-assign
   render() {
     return (
       <section className="album">
