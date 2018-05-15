@@ -14,7 +14,8 @@ class Album extends Component {
       currentSong: album.songs[0],
       currentTime: 0,
       duration: album.songs[0].duration,
-      isPlaying: false
+      isPlaying: false,
+      volume: 0,
     };
     this.audioElement = document.createElement('audio');
     this.audioElement.src = album.songs[0].audioSrc;
@@ -26,11 +27,18 @@ class Album extends Component {
    },
    durationchange: e => {
      this.setState({ duration: this.audioElement.duration });
-   }
+   },
+   volumeChange: e => {
+     this.setState({ volume: this.audioElement.volume});
+   },
+  
  };
  this.audioElement.addEventListener('timeupdate', this.eventListeners.timeupdate);
  this.audioElement.addEventListener('durationchange',this.eventListeners.durationchange);
+ this.audioElement.addEventListener('volumechange', this.eventListeners.volumechange);
   }
+
+  
   componentWillUnmount() {
     this.audioElement.src = null;
     this.audioElement.removeEventListener('timeupdate',this.eventListeners.timeupdate);
@@ -86,17 +94,21 @@ class Album extends Component {
        this.audioElement.currentTime = newTime;
        this.setState({ currentTime: newTime});
      }
+     formatTime(timeInSeconds){
+       console.log("formatTime", timeInSeconds)
+      if (timeInSeconds < 10){
+        return (Math.floor(timeInSeconds / 60 )) + ":0" + (Math.floor(timeInSeconds % 60))
+      } else if (timeInSeconds) {
+        return (Math.floor(timeInSeconds / 60 )) + ":" + (Math.floor(timeInSeconds % 60))
+      } else {
+        return "-:--";
+      }
+    }
      handleVolumeChange(e){
        const newVolume = e.target.value;
-       this.audioElement.currentVolume = newVolume;
+       this.audioElement.volume = newVolume;
       this.setState({ currentVolume: newVolume});
-     }
-     formatTime(timesInSeconds){
-       if (timesInSeconds){
-         return (Math.floor(timesInSeconds / 60 )) + ":" + (Math.floor(timesInSeconds % 60))
-       } else {
-         return "-:--";
-       }
+     
      }
   render() {
     return (
