@@ -1,71 +1,134 @@
 .App {
   text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 17px;
-  height:auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  padding-left: 80px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.hero-title {
+  font-family: 'Permanent Marker', cursive;
+  padding-left: 80px;
+  background-image: -webkit-linear-gradient(black, gray 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+.web-dev{
+  padding-bottom: inherit;
+}
+.point-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150%;
+} 
 
-.App-title {
-  font-size: 1.5em;
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; 
   
 }
 
-.App-intro {
-  font-size: large;
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
 }
 
-/*album css */
-
-#song-list{
-  text-align: center;
-   background-color:#666699;
-   border-style: dotted;
-   border-color: white;
-   margin: auto;
-}
-
-body{
-  background-color:#eee6ff;
-  margin: auto;
-}
-
-/*landing css*/
-
-.hero-title {
-  color: #6510B8;
-}
-
-.point-description{
-  color: #6510B8;
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: gray;
+  font-family: American Typewriter, serif;
 }
 
 nav {
-  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  background-image: -webkit-linear-gradient(black, gray 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: darkgray;
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+  text-align: center;
+  border-bottom: double;
+  opacity: 0.5;
+  text-align: right;
+} 
+
+link:active{
+color: #000;
+}
+.library {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150%;
 }
 
-h1{
-  font-size: 40px;
-  font-style: italic;
-  text-decoration: underline;
+.song {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150%;
 }
 
-.landing{
-font-family: 'Noto Sans', sans-serif;
+.album-details {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#time-control {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100%;
+} 
+
+#volume-control {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100%;
+}
+
+
+.player-bar:hover{
+  transform: scale(1.05);
+  color: #000;
+}
+
+#play-pause:hover, #previous:hover, #next:hover{
+  transform: scale(1.5);
+}
+
+
+
+
+.song-title {
+color: burlywood
+}
+.song-duration{
+  color:  rgb(68, 45, 14)
+}
+
+.ion-play:hover{
+  transform: scale(1.05);
+}
+
+.library{
+  position: relative;
+  background: url('https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?cs=srgb&dl=cassette-cassette-tape-music-92083.jpg&fm=jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.nav-link1{
+  color: #000;
+}
+
+.album{
+  position: relative;
+  background: url('https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?cs=srgb&dl=cassette-cassette-tape-music-92083.jpg&fm=jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }

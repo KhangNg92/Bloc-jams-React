@@ -132,9 +132,7 @@ class Album extends Component {
             <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
               <td className="song-actions">
                 <button>
-                  <span className="song-number">{index+1}</span>
-                  <span className="ion-play"></span>
-                  <span className="ion-pause"></span>
+                  <div className="ion-play"></div>
                 </button>
               </td>
               <td className="song-title">{song.title}</td>

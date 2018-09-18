@@ -4,27 +4,34 @@ import './App.css';
 import { Route, Link } from 'react-router-dom';
 import Landing from './components/Landing';
 import Library from './components/Library';
-import PlayerBar from './components/PlayerBar';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       <header>
-       <nav>
-             <Link to='/'>Landing</Link>
-             <Link to='/library'>Library</Link>
-           </nav>
-           <h1>Bloc Jams</h1>
-         </header>
-         <main>
-         <Route exact path="/" component={Landing} /> {/* exact? By default, a route matches any path in the URL that begins with the value of the path prop*/}
-           <Route path="/library" component={Library} />
-           <Route path="/album/:slug" component={Album} />
-         </main>
-      </div>
-    );
-  }
+      <div className="App" >
+      <header>
+        <nav>
+         
+            <Link to='/' >Landing</Link>
+            <span></span>
+            <Link to='/library'>Library</Link>
+         
+        </nav>
+        <h1>Bloc Jams</h1>
+      </header>
+      <main>
+        <Route exact path='/' component={Landing} />
+        <Route path='/library' component={Library} />
+        <Route path='/album/:slug' component={Album} />
+        <div className ="web-dev">By Khang Nguyen</div>
+      </main>
+      
+    </div>
+    
+  );
 }
+}
+  
 
 export default App;

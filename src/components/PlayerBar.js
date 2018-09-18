@@ -4,7 +4,10 @@ class PlayerBar extends Component {
     render() {
         return (
             <section className='player-bar'>
+              
+    <div className="wave"></div>
             <section id ='buttons'>
+            
             <button id ='previous' onClick ={this.props.handlePrevClick}>
             <span className = 'ion-skip-backward'></span>
             </button>
@@ -29,6 +32,7 @@ class PlayerBar extends Component {
             <div className = 'total-time'>{this.props.formatTime(this.props.duration)}</div>
             <section id = 'volume-control'>
             <div className = "icon ion-volume-low">{this.props.volume}</div>
+            
             <input 
             type = 'range'
             className = 'seek-bar'
@@ -38,6 +42,7 @@ class PlayerBar extends Component {
             step = '0.01'
             onChange = {this.props.handleVolumeChange}/>
             <span className = "icon ion-volume-high"></span>
+            
            </section>
             </section>
             </section>
