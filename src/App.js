@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <div className="App" >
       <header>
-        <nav>
-         
-            <Link to='/' >Landing</Link>
-            <span></span>
+        <nav1>
+            <Link to='/' >Home</Link>
+            </nav1>
+            <nav>
             <Link to='/library'>Library</Link>
          
         </nav>

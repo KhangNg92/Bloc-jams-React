@@ -15,9 +15,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.web-dev{
-  padding-bottom: inherit;
-}
+
 .point-title {
   font-family: 'Permanent Marker', cursive;
   font-size: 150%;
@@ -57,7 +55,7 @@ nav {
 	padding: 0;
   text-align: center;
   border-bottom: double;
-  opacity: 0.5;
+  opacity: 1;
   text-align: right;
 } 
 
@@ -121,9 +119,7 @@ color: burlywood
 
 }
 
-.nav-link1{
-  color: #000;
-}
+
 
 .album{
   position: relative;
@@ -131,4 +127,32 @@ color: burlywood
   background-size: cover;
   background-position: center;
 
+}
+
+a:hover{
+  transform: scale(1.05);
+  color: #000
+}
+
+.library:hover{
+  transform: scale(1.05);
+  
+}
+nav1 {
+  font-family: 'Permanent Marker', cursive;
+  background-image: -webkit-linear-gradient(black, gray 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: darkgray;
+  list-style-type: none;
+	margin: 0;
+	padding: 200;
+  text-align: center;
+  border-bottom: double;
+  opacity: 1;
+  text-align: right;
+} 
+
+nav1:hover{
+  transform: scale(2);
 }
