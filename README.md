@@ -1,10 +1,10 @@
 # 90's music audio player
-
+<img src="githubImg/audio.jpg"/>
 ## Description
 
 A music audio player build with React.JS. Responsive front-end design done with Bootstrap
 
-View the <a href = "">site</a>
+View the <a href = "https://audio-player-90s.herokuapp.com/">site</a>
 
 ## Technologies & Tools
 
